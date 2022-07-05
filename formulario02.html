@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testagem</title>
+</head>
+<body>
+    <h1>Testagem de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"></form>
+    <p>
+        <label for="iusu">Usuário:</label>
+        <input type="text" name="usu" id="iusu" required minlength="3" maxlength="15" autocomplete="username">
+    </p>
+    <p>
+        <label for="isen">Senha: </label>
+        <input type="password" name="sen" id="isen" required minlength="8" size="10" placeholder="senha do usuario" autocomplete="current-password"> 
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+
+    <!-- get/post = padrão é get, usado quando seus dados não forem sensíveis, podendo enviar até 3 mil bytes = não pode ultrapassar 3 mil letras. -->
+
+    <!-- HTTPS para proteção de dados -->
+</body>
+</html>
